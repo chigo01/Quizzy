@@ -81,13 +81,11 @@ class _ResultState extends State<Result> {
               height: 20,
             ),
             OutlinedButton(
-              style: ButtonStyle(
-                backgroundColor:
-                    MaterialStateProperty.all(Color.fromARGB(136, 87, 65, 6)),
-                shape: MaterialStateProperty.all(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
+              style: OutlinedButton.styleFrom(
+                primary: const Color.fromARGB(136, 87, 65, 6),
+                maximumSize: const Size.fromHeight(100),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               onPressed: () {
