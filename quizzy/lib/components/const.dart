@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const primaryColor = BoxDecoration(
   boxShadow: [
@@ -18,5 +19,10 @@ const primaryColor = BoxDecoration(
   ),
 );
 
+const Color colorWhite = Colors.white;
 
- const Color colorWhite = Colors.white;
+final fontStyle = GoogleFonts.balooBhaina2(
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+  color: const Color(0xffdbcccc),
+);

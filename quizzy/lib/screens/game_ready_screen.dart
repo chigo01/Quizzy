@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../components/const.dart';
 
@@ -57,11 +56,7 @@ class _GameReadyState extends State<GameReady> {
                 margin: const EdgeInsets.only(left: 20),
                 child: Text(
                   'Ready?',
-                  style: GoogleFonts.balooBhaina2(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xffdbcccc),
-                  ),
+                  style: fontStyle,
                 ),
               ),
               Container(

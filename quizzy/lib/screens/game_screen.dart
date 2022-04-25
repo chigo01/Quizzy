@@ -168,11 +168,7 @@ class _GameQuizState extends State<GameQuiz> {
               margin: const EdgeInsets.only(left: 20),
               child: Text(
                 'question ${questionIndex + 1} of ${question.length}',
-                style: GoogleFonts.balooBhaina2(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: const Color(0xffdbcccc),
-                ),
+                style: fontStyle,
               ),
             ),
             Question(
