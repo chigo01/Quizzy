@@ -60,15 +60,15 @@ class _ResultState extends State<Result> {
                     fontSize: 100,
                     myColor: Colors.yellow,
                   ),
-                  if (score < 5)
+                  if (score <= 5)
                     const MyText(
                       text: 'You need to practice more',
                       myFont: FontWeight.bold,
                       fontSize: 27,
                       myColor: Colors.redAccent,
                     ),
-                  if (score >= 5 && score < 13)
-                     MyText(
+                  if (score >= 6 && score < 13)
+                    MyText(
                       text: 'You did well'.toUpperCase(),
                       myFont: FontWeight.bold,
                       fontSize: 30,
@@ -80,8 +80,17 @@ class _ResultState extends State<Result> {
             const SizedBox(
               height: 20,
             ),
-            InkWell(
-              onTap: () {
+            OutlinedButton(
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all(Color.fromARGB(136, 87, 65, 6)),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ),
+              onPressed: () {
                 resetQuestion();
                 Navigator.pushNamed(context, '/gamePlay');
               },
