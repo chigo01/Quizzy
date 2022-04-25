@@ -87,6 +87,10 @@ class _ResultState extends State<Result> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
+                side: const BorderSide(
+                  color: Colors.white,
+                  width: 3,
+                ),
               ),
               onPressed: () {
                 resetQuestion();
@@ -96,7 +100,7 @@ class _ResultState extends State<Result> {
                 text: 'Play Again',
                 myFont: FontWeight.bold,
                 fontSize: 40,
-                myColor: Colors.white,
+                myColor: Color.fromARGB(216, 249, 237, 6),
               ),
             ),
           ],
