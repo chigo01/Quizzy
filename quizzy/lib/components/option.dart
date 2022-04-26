@@ -28,13 +28,13 @@ class ButtonOptions extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             color: colorAnswer,
           ),
-          width: 300,
-          height: 60,
+          width: MediaQuery.of(context).size.width * 0.8,
+          height: MediaQuery.of(context).size.height * 1.26,
           child: Text(
             answer,
             style: GoogleFonts.poppins(
               textStyle: TextStyle(
-                fontSize: 25.7,
+                fontSize: 20.8,
                 color: colorText,
                 fontWeight: FontWeight.bold,
               ),

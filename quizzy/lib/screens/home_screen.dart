@@ -12,6 +12,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    var _height = MediaQuery.of(context).size.height;
+    //final _width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       )),
                 ]),
           ),
-          const SizedBox(height: 40),
+           SizedBox(height: _height * 0.1),
           Stack(
             //stack widget in order to wrap widget
             //  clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -92,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 padding: const EdgeInsets.only(bottom: 20),
                 margin: const EdgeInsets.symmetric(horizontal: 10),
-                height: 550,
+                height: _height * 0.62,
                 width: double.infinity,
                 decoration: const BoxDecoration(
                     //color: Color(0xff497CEF),
@@ -137,7 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 100),
+                 SizedBox(height: _height * 0.1),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, '/gameReady');

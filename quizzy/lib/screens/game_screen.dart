@@ -70,6 +70,7 @@ class _GameQuizState extends State<GameQuiz> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: Container(
         decoration: primaryColor,
