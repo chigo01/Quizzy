@@ -1,5 +1,5 @@
 var question = [
-   // {},
+  // {},
   {
     'question': 'Which is the largest \n city in nigeria?',
     'answer': [
@@ -19,7 +19,10 @@ var question = [
   {
     'question': ' What is the most Northern Capital City?',
     'answer': [
-      {'option': 'kanban', 'scores': false},
+      {
+        'option': 'kanban',
+        'scores': false,
+      },
       {'option': 'Reykjavik', 'scores': true},
       {'option': 'Terin', 'scores': false}
     ],
